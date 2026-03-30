@@ -173,7 +173,7 @@ if __name__ == "__main__":
     if len(sys.argv) == 2 and sys.argv[1].endswith(".json"):
         f = open(sys.argv[1])
         st = f.read()
-        print(main(st))
+        print(main(st)[0])
     else:
         print("Invalid file try like this-python pyzon.py <path-to-json-file>")
         sys.exit(1)
